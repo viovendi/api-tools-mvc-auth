@@ -22,7 +22,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         },
         "platform": {
-            "php": "8.0.99"
+            "php": "8.1.99"
         }
     },
     "extra": {
@@ -31,10 +31,10 @@
         }
     },
     "require": {
-        "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
-        "laminas-api-tools/api-tools-api-problem": "^1.5.0",
-        "laminas-api-tools/api-tools-content-negotiation": "^1.8.0",
-        "laminas-api-tools/api-tools-oauth2": "^1.9",
+        "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
+        "laminas-api-tools/api-tools-api-problem": "^1.7.0",
+        "laminas-api-tools/api-tools-content-negotiation": "^1.9.0",
+        "laminas-api-tools/api-tools-oauth2": "^1.10",
         "laminas/laminas-authentication": "^2.5.3",
         "laminas/laminas-eventmanager": "^3.2",
         "laminas/laminas-http": "^2.5.4",
@@ -76,5 +76,24 @@
     },
     "replace": {
         "zfcampus/zf-mvc-auth": "^1.5.1"
-    }
+    },
+    "provide": {
+        "laminas-api-tools/api-tools-api-problem": "1.7.x-dev",
+        "laminas-api-tools/api-tools-content-negotiation": "1.9.x-dev",
+        "laminas-api-tools/api-tools-oauth2": "1.10.x-dev"
+    },
+    "repositories": [
+        {
+          "type": "git",
+          "url": "https://github.com/viovendi/api-tools-api-problem"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/viovendi/api-tools-content-negotiation"
+        },
+        {
+          "type": "git",
+          "url": "https://github.com/viovendi/api-tools-oauth2"
+        }
+    ]
 }
