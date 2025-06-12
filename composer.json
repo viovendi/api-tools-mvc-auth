@@ -77,11 +77,6 @@
     "replace": {
         "zfcampus/zf-mvc-auth": "^1.5.1"
     },
-    "provide": {
-        "laminas-api-tools/api-tools-api-problem": "1.7.x-dev",
-        "laminas-api-tools/api-tools-content-negotiation": "1.9.x-dev",
-        "laminas-api-tools/api-tools-oauth2": "1.10.x-dev"
-    },
     "repositories": [
         {
           "type": "git",
